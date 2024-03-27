@@ -1,8 +1,12 @@
 const express = require('express');
 const app = express();
 
+app.get('/', (req, res) => {
+        res.send('Hello World\n');
+});
+
 app.get('/a', (req, res) => {
-	res.send('Hello World\n');
+	res.send('good evening\n');
 });
 
 app.get('/b', (req, res) => {
